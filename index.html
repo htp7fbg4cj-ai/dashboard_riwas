@@ -1,0 +1,744 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">Com base no relatório de Google Ads da Riwas Hidráulicos (maio/2026), o dashboard consolida os dados disponíveis do primeiro mês de campanha, iniciada em 11/05/2026, com foco em performance de mídia paga, distribuição por dispositivo/gênero e orientações estratégicas da agência EWS Marketing.</p>
+<p class="p2"><br></p>
+<p class="p1">```html</p>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="pt-BR"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;Dashboard Google Ads — Riwas Hidráulicos | Maio 2026&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>* { margin: 0; padding: 0; box-sizing: border-box; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Segoe UI', Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: #f0f2f5;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #1a1a2e;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* HEADER */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.header {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: linear-gradient(135deg, #0a2342 0%, #1565c0 100%);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 28px 36px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.header-left h1 { font-size: 22px; font-weight: 700; letter-spacing: 0.5px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.header-left p { font-size: 13px; opacity: 0.8; margin-top: 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.header-right {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: right;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>opacity: 0.85;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1.7;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge-inicio {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: #ff9800;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #000;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 3px 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* LAYOUT */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.container { max-width: 1200px; margin: 0 auto; padding: 28px 24px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.section-title {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #1565c0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-left: 4px solid #1565c0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding-left: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* CARDS KPI */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.kpi-grid {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.kpi-card {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 18px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow: 0 2px 8px rgba(0,0,0,0.07);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-top: 4px solid #1565c0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.kpi-card.green { border-top-color: #2e7d32; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.kpi-card.orange { border-top-color: #e65100; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.kpi-card.teal { border-top-color: #00695c; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.kpi-card.purple { border-top-color: #6a1b9a; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.kpi-card.red { border-top-color: #c62828; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.kpi-label {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 0.8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #777;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.kpi-value {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 26px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #1a1a2e;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.kpi-sub {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #999;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* ALERTA */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.alert {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 12px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>align-items: flex-start;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.alert-info { background: #e3f2fd; border-left: 4px solid #1565c0; color: #0d47a1; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.alert-warning { background: #fff8e1; border-left: 4px solid #ff9800; color: #7a4f00; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.alert-success { background: #e8f5e9; border-left: 4px solid #2e7d32; color: #1b5e20; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.alert-icon { font-size: 16px; margin-top: 1px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* GRID 2 COLUNAS */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.grid-2 {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns: 1fr 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>@media (max-width: 700px) { .grid-2 { grid-template-columns: 1fr; } }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow: 0 2px 8px rgba(0,0,0,0.07);</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.card h3 {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #1565c0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 0.7px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-bottom: 1px solid #e8eef5;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding-bottom: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* BARRAS */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.bar-row { margin-bottom: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.bar-label {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #444;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.bar-track {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: #e8eef5;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.bar-fill {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>transition: width 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.bar-blue { background: #1565c0; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.bar-green { background: #2e7d32; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.bar-orange { background: #e65100; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.bar-teal { background: #00695c; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.bar-purple { background: #6a1b9a; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.bar-red { background: #c62828; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.bar-gray { background: #9e9e9e; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* TABELA */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>table {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-collapse: collapse;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>thead th {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: #1565c0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 9px 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: left;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 0.7px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>tbody tr:nth-child(even) { background: #f5f8ff; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>tbody td {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 9px 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-bottom: 1px solid #e8eef5;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.td-center { text-align: center; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 2px 9px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge-green { background: #c8e6c9; color: #1b5e20; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge-yellow { background: #fff9c4; color: #7a5c00; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge-red { background: #ffcdd2; color: #b71c1c; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge-blue { background: #bbdefb; color: #0d47a1; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.badge-gray { background: #eceff1; color: #546e7a; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* RESUMO EXECUTIVO */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.exec-summary {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 22px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow: 0 2px 8px rgba(0,0,0,0.07);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.exec-summary ul {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>list-style: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.exec-summary ul li {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 7px 0 7px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-bottom: 1px solid #f0f0f0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 13.5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1.5;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.exec-summary ul li:last-child { border-bottom: none; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.exec-summary ul li::before {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>content: '▸';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #1565c0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>top: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* NPS-STYLE GAUGE for CTR */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.ctr-block {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 12px 0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.ctr-number {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 800;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #2e7d32;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.ctr-label { font-size: 12px; color: #888; margin-top: 6px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.ctr-ref {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: #c8e6c9;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #1b5e20;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 4px 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* INVESTIMENTO */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.inv-row {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 8px 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-bottom: 1px solid #f0f0f0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.inv-row:last-child { border-bottom: none; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.inv-label { color: #555; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.inv-value { font-weight: 700; color: #1a1a2e; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.inv-value.green { color: #2e7d32; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.inv-value.blue { color: #1565c0; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.inv-value.orange { color: #e65100; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* ORIENTAÇÕES */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.orientacoes-grid {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>gap: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.orientacao-card {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow: 0 2px 8px rgba(0,0,0,0.07);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-left: 4px solid #1565c0;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.orientacao-card.warn { border-left-color: #e65100; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.orientacao-card.ok { border-left-color: #2e7d32; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.orientacao-num {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 800;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #1565c0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.orientacao-card.warn .orientacao-num { color: #e65100; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.orientacao-card.ok .orientacao-num { color: #2e7d32; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.orientacao-titulo {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 6px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #1a1a2e;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.orientacao-desc {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #666;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>line-height: 1.5;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* VALIDAÇÃO */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.validacao {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: #f5f8ff;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: 1px solid #c5d8f5;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 18px 22px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.validacao h3 {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #1565c0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>letter-spacing: 0.7px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.validacao table { font-size: 12px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* PLANO */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.plano-box {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: linear-gradient(135deg, #0a2342 0%, #1565c0 100%);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 20px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.plano-box h3 { font-size: 14px; font-weight: 700; margin-bottom: 14px; opacity: 0.9; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.plano-items { display: flex; gap: 20px; flex-wrap: wrap; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.plano-item {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: rgba(255,255,255,0.12);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 12px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>min-width: 160px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.plano-item-label { font-size: 11px; opacity: 0.75; text-transform: uppercase; margin-bottom: 4px; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.plano-item-value { font-size: 18px; font-weight: 700; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* LIMITAÇÕES */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.limitacoes {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: #fff8e1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: 1px solid #ffe082;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 16px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.limitacoes h3 {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #7a4f00;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.limitacoes ul { list-style: none; padding: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.limitacoes ul li {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 12.5px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #5a3e00;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 5px 0 5px 18px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-bottom: 1px solid #ffe082;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.limitacoes ul li:last-child { border-bottom: none; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.limitacoes ul li::before { content: '⚠'; position: absolute; left: 0; font-size: 11px; top: 6px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>/* FOOTER */</p>
+<p class="p1"><span class="Apple-converted-space">  </span>.footer {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 11px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #aaa;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 20px 0 10px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border-top: 1px solid #e0e0e0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- HEADER --&gt;</p>
+<p class="p1">&lt;div class="header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="header-left"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;📊 Dashboard Google Ads — Riwas Hidráulicos&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Relatório de Performance · Campanha de Pesquisa 2026 · Gestão: EWS Marketing Digital&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span class="badge-inicio"&gt;🚀 Campanha iniciada em 11/05/2026&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="header-right"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;strong&gt;Período analisado:&lt;/strong&gt; Maio 2026&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;strong&gt;Site:&lt;/strong&gt; www.riwashidraulicos.com.br&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;strong&gt;Plano:&lt;/strong&gt; Start 1 — R$ 2.200,00/mês&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;strong&gt;Referência:&lt;/strong&gt; Jun/2026</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="container"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- ALERTA CONTEXTO --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="alert alert-info"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span class="alert-icon"&gt;ℹ️&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;span&gt;&lt;strong&gt;Contexto importante:&lt;/strong&gt; A campanha foi iniciada em &lt;strong&gt;11 de maio de 2026&lt;/strong&gt;, com tags de conversão ativadas apenas em &lt;strong&gt;28 de maio de 2026&lt;/strong&gt;. Os dados de maio representam aproximadamente &lt;strong&gt;21 dias de veiculação&lt;/strong&gt; (não o mês completo), o que deve ser considerado na leitura de todos os indicadores.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- KPIs PRINCIPAIS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-title"&gt;Principais KPIs — Maio 2026&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="kpi-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="kpi-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-label"&gt;Cliques Totais&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-value"&gt;139&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-sub"&gt;Período parcial (~21 dias)&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="kpi-card teal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-label"&gt;Impressões&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-value"&gt;1.111&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-sub"&gt;Buscas exibidas&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="kpi-card green"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-label"&gt;CTR&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-value"&gt;12,5%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-sub"&gt;Calculado: 139 / 1.111&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="kpi-card orange"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-label"&gt;CPC Médio&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-value"&gt;R$ 4,71&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-sub"&gt;Custo por clique&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="kpi-card purple"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-label"&gt;Verba Utilizada&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-value"&gt;R$ 654&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-sub"&gt;de R$ 700 disponíveis&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="kpi-card red"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-label"&gt;Impressão Perdida&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-value"&gt;19,7%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi-sub"&gt;Share perdido no leilão&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- RESUMO EXECUTIVO --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-title"&gt;Resumo Executivo&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="exec-summary"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;strong&gt;Estreia sólida:&lt;/strong&gt; Com apenas ~21 dias de campanha ativa, a Riwas Hidráulicos gerou 139 cliques e 1.111 impressões — ritmo que projeta, em mês cheio, aproximadamente &lt;strong&gt;200 cliques e 1.580 impressões&lt;/strong&gt; com o mesmo budget.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;strong&gt;CTR extraordinário (12,5%):&lt;/strong&gt; A taxa de cliques supera em mais de 4× o benchmark de excelência da plataforma (3%). Indica que os anúncios estão altamente relevantes para as buscas do público-alvo, com boa qualidade de copy e seleção de palavras-chave.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;strong&gt;Verba quase totalmente utilizada (R$ 654 / R$ 700 = 93,4%):&lt;/strong&gt; A campanha consumiu eficientemente o orçamento disponível, sem desperdício expressivo — sinal positivo de gestão de budget.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;strong&gt;Dominância masculina (91,7%):&lt;/strong&gt; 99 de 108 cliques segmentados por gênero vieram de homens — perfil coerente com o segmento de produtos hidráulicos industriais/técnicos.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;strong&gt;Tags de conversão com ativação tardia:&lt;/strong&gt; As tags só entraram em vigor em 28/05, restringindo a mensuração de conversões (WhatsApp, atendimentos) a apenas ~3 dias do mês. Dados de conversão de maio são insuficientes para análise conclusiva.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;strong&gt;Impressão perdida de 19,7%:&lt;/strong&gt; A campanha deixou de aparecer em quase 1 em cada 5 buscas elegíveis. Pode indicar limitação de budget diário ou concorrência de leilão — ponto a monitorar na escala do plano.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- CTR + GÊNERO --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid-2"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- CTR --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3&gt;📈 Desempenho de CTR&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="ctr-block"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="ctr-number"&gt;12,5%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="ctr-label"&gt;Taxa de Cliques (CTR) — Maio 2026&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="ctr-ref"&gt;✅ Excelente — Benchmark: &amp;gt; 3%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="margin-top:18px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bar-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bar-label"&gt;&lt;span&gt;CTR Riwas (12,5%)&lt;/span&gt;&lt;span style="color:#2e7d32;font-weight:700;"&gt;12,5%&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bar-track"&gt;&lt;div class="bar-fill bar-green" style="width:100%;"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bar-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bar-label"&gt;&lt;span&gt;Benchmark Excelente (3%)&lt;/span&gt;&lt;span&gt;3,0%&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bar-track"&gt;&lt;div class="bar-fill bar-gray" style="width:24%;"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="alert alert-success" style="margin-top:14px;font-size:12px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span&gt;O CTR de &lt;strong&gt;12,5%&lt;/strong&gt; posiciona a campanha em patamar de alta relevância publicitária. Isso sugere anúncios bem alinhados à intenção de busca e palavras-chave qualificadas.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- GÊNERO --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3&gt;👥 Distribuição por Gênero&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="margin-bottom:18px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bar-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bar-label"&gt;&lt;span&gt;🔵 Homens&lt;/span&gt;&lt;span style="font-weight:700;"&gt;99 cliques (91,7%)&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bar-track" style="height:14px;"&gt;&lt;div class="bar-fill bar-blue" style="width:91.7%;"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bar-row" style="margin-top:12px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bar-label"&gt;&lt;span&gt;🔴 Mulheres&lt;/span&gt;&lt;span style="font-weight:700;"&gt;9 cliques (8,3%)&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bar-track" style="height:14px;"&gt;&lt;div class="bar-fill bar-red" style="width:8.3%;"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="font-size:12px;color:#999;margin-top:6px;"&gt;Base: 108 cliques com dados de gênero (de 139 totais)&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="alert alert-info" style="margin-top:14px;font-size:12px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span&gt;Concentração em &lt;strong&gt;homens (91,7%)&lt;/strong&gt; é coerente com o perfil técnico/industrial do segmento hidráulico. Sugere que a segmentação de audiência está bem calibrada.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- INVESTIMENTO --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="grid-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3&gt;💰 Composição do Investimento — Maio 2026&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="inv-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inv-label"&gt;Plano Contratado (total)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inv-value blue"&gt;R$ 2.200,00&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="inv-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inv-label"&gt;Verba Google Ads (disponível)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inv-value blue"&gt;R$ 1.000,00&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="inv-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inv-label"&gt;Gestão EWS Marketing&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inv-value"&gt;R$ 1.200,00&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="inv-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inv-label"&gt;Verba Google Ads (utilizada)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inv-value green"&gt;R$ 654,00&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="inv-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inv-label"&gt;Orçamento Mês Parcial (maio)&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inv-value orange"&gt;R$ 700,00&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="inv-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inv-label"&gt;Taxa de Utilização da Verba&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inv-value green"&gt;93,4%&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="inv-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inv-label"&gt;CPC Médio&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="inv-value"&gt;R$ 4,71&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="margin-top:14px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bar-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bar-label"&gt;&lt;span&gt;Utilização da verba disponível&lt;/span&gt;&lt;span style="color:#2e7d32;font-weight:700;"&gt;93,4%&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bar-track" style="height:12px;"&gt;&lt;div class="bar-fill bar-green" style="width:93.4%;"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- IMPRESSÃO PERDIDA --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3&gt;📉 Impressão Perdida &amp; Escala&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="text-align:center; padding:16px 0 10px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="font-size:42px;font-weight:800;color:#e65100;"&gt;19,7%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="font-size:12px;color:#888;"&gt;Share de impressão perdida no leilão&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div style="margin-top:10px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bar-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bar-label"&gt;&lt;span&gt;Impressões capturadas&lt;/span&gt;&lt;span style="color:#2e7d32;font-weight:700;"&gt;80,3%&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bar-track" style="height:12px;"&gt;&lt;div class="bar-fill bar-green" style="width:80.3%;"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bar-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bar-label"&gt;&lt;span&gt;Impressões perdidas&lt;/span&gt;&lt;span style="color:#e65100;font-weight:700;"&gt;19,7%&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bar-track" style="height:12px;"&gt;&lt;div class="bar-fill bar-orange" style="width:19.7%;"&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="alert alert-warning" style="margin-top:14px;font-size:12px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;span&gt;Quase &lt;strong&gt;1 em cada 5 buscas elegíveis&lt;/strong&gt; não exibiu o anúncio. Pode ser consequência do budget diário limitado (R$ 700/mês parcial) ou concorrência no leilão. Expansão de verba para R$ 1.000/mês cheio pode reduzir esse gap.&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- TABELA MENSAL --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-title"&gt;Histórico de Performance Anual (2026)&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card" style="margin-bottom:28px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;📅 Tabela de Campanhas por Mês&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;th&gt;Mês&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;th&gt;Cliques&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;th&gt;Impressões&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;th&gt;CTR&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;th&gt;CPC Médio&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;th&gt;Verba Utilizada&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;th&gt;Investimento&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;th&gt;Impr. Perdida&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;th&gt;Status&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Janeiro&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;&lt;span class="badge badge-gray"&gt;Não iniciado&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Fevereiro&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;&lt;span class="badge badge-gray"&gt;Não iniciado&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Março&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;&lt;span class="badge badge-gray"&gt;Não iniciado&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Abril&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;&lt;span class="badge badge-gray"&gt;Não iniciado&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr style="background:#e8f5e9;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;td&gt;&lt;strong&gt;Maio ★&lt;/strong&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;td class="td-center"&gt;&lt;strong&gt;139&lt;/strong&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;td class="td-center"&gt;&lt;strong&gt;1.111&lt;/strong&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;td class="td-center"&gt;&lt;strong style="color:#2e7d32;"&gt;12,5%&lt;/strong&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;td class="td-center"&gt;&lt;strong&gt;R$ 4,71&lt;/strong&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;td class="td-center"&gt;&lt;strong&gt;R$ 654,00&lt;/strong&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;td class="td-center"&gt;&lt;strong&gt;R$ 700,00&lt;/strong&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;td class="td-center"&gt;&lt;strong style="color:#e65100;"&gt;19,7%&lt;/strong&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;td class="td-center"&gt;&lt;span class="badge badge-green"&gt;Ativo ✓&lt;/span&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Junho&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;&lt;span class="badge badge-blue"&gt;Em andamento&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Julho&lt;/td&gt;&lt;td class="td-center" colspan="7"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;&lt;span class="badge badge-gray"&gt;Aguardando&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Agosto&lt;/td&gt;&lt;td class="td-center" colspan="7"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;&lt;span class="badge badge-gray"&gt;Aguardando&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Setembro&lt;/td&gt;&lt;td class="td-center" colspan="7"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;&lt;span class="badge badge-gray"&gt;Aguardando&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Outubro&lt;/td&gt;&lt;td class="td-center" colspan="7"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;&lt;span class="badge badge-gray"&gt;Aguardando&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Novembro&lt;/td&gt;&lt;td class="td-center" colspan="7"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;&lt;span class="badge badge-gray"&gt;Aguardando&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Dezembro&lt;/td&gt;&lt;td class="td-center" colspan="7"&gt;—&lt;/td&gt;&lt;td class="td-center"&gt;&lt;span class="badge badge-gray"&gt;Aguardando&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- ORIENTAÇÕES DE PERFORMANCE --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-title"&gt;Orientações de Performance — EWS Marketing&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="orientacoes-grid"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="orientacao-card warn"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="orientacao-num"&gt;1&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="orientacao-titulo"&gt;Registrar Atendimentos via CRM&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="orientacao-desc"&gt;Todos os contatos recebidos pelo WhatsApp devem ser registrados em planilha ou CRM. Ferramentas indicadas: RD Station, Pipedrive, HubSpot, Zendesk Sell, Kommo.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="orientacao-card warn"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="orientacao-num"&gt;2&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="orientacao-titulo"&gt;Mensurar Atendimentos × Negócios Fechados&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="orientacao-desc"&gt;Criar indicador de conversão: quantos atendimentos viram vendas. Essencial para calcular ROI da campanha.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="orientacao-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="orientacao-num"&gt;3&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="orientacao-titulo"&gt;Relatório de Vendas × Investimento&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="orientacao-desc"&gt;Cruzar receita gerada pela campanha com o investimento mensal para calcular ROAS e viabilidade de escala.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="orientacao-card ok"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="orientacao-num"&gt;⚡&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="orientacao-titulo"&gt;Atender em até 1 minuto&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="orientacao-desc"&gt;Atendimento no 1º minuto: &lt;strong&gt;conversão de 10% a 15%&lt;/strong&gt;. Entre 1 e 5 min: &lt;strong&gt;3%&lt;/strong&gt;. Acima de 5 min: &lt;strong&gt;próximo a zero&lt;/strong&gt;. Velocidade de resposta é crítica.&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- PLANO ATUAL --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-title"&gt;Estrutura do Plano Contratado&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="plano-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;📋 Plano Start 1 — Riwas Hidráulicos&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="plano-items"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="plano-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="plano-item-label"&gt;Total Mensal&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="plano-item-value"&gt;R$ 2.200,00&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="plano-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="plano-item-label"&gt;Verba Google Ads&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="plano-item-value"&gt;R$ 1.000,00&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="plano-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="plano-item-label"&gt;Gestão EWS&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="plano-item-value"&gt;R$ 1.200,00&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="plano-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="plano-item-label"&gt;Próximo Reajuste&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="plano-item-value"&gt;Fev/2027&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div style="margin-top:16px;font-size:12px;opacity:0.85;background:rgba(255,255,255,0.1);padding:10px 14px;border-radius:8px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>💡 &lt;strong&gt;Observação estratégica (EWS):&lt;/strong&gt; Para cobertura nos 3 estados (PR, SC e RS), recomenda-se migrar para o &lt;strong&gt;Plano Start 2&lt;/strong&gt; com R$ 700/estado/mês, totalizando R$ 2.100 de verba mídia.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- PERGUNTAS QUE OS DADOS EXIGEM --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-title"&gt;Perguntas Estratégicas que os Dados Passam a Exigir&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card" style="margin-bottom:28px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;🔍 Próximas Perguntas de Gestão&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul style="list-style:none;padding:0;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li style="padding:8px 0 8px 22px;position:relative;border-bottom:1px solid #f0f0f0;font-size:13px;color:#333;"&gt;&lt;span style="position:absolute;left:0;color:#1565c0;font-weight:700;"&gt;01&lt;/span&gt; Quantos dos 139 cliques se converteram em contatos reais via WhatsApp ou formulário?&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li style="padding:8px 0 8px 22px;position:relative;border-bottom:1px solid #f0f0f0;font-size:13px;color:#333;"&gt;&lt;span style="position:absolute;left:0;color:#1565c0;font-weight:700;"&gt;02&lt;/span&gt; Qual é a taxa de conversão clique → atendimento → venda? Os R$ 654 geraram quanto em receita?&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li style="padding:8px 0 8px 22px;position:relative;border-bottom:1px solid #f0f0f0;font-size:13px;color:#333;"&gt;&lt;span style="position:absolute;left:0;color:#1565c0;font-weight:700;"&gt;03&lt;/span&gt; Qual é o tempo médio de resposta atual da equipe de atendimento? Está dentro da janela de 1 minuto?&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li style="padding:8px 0 8px 22px;position:relative;border-bottom:1px solid #f0f0f0;font-size:13px;color:#333;"&gt;&lt;span style="position:absolute;left:0;color:#1565c0;font-weight:700;"&gt;04&lt;/span&gt; Quais as 5 palavras-chave com melhor conversão? Merecem maior bid e expansão de orçamento?&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li style="padding:8px 0 8px 22px;position:relative;border-bottom:1px solid #f0f0f0;font-size:13px;color:#333;"&gt;&lt;span style="position:absolute;left:0;color:#1565c0;font-weight:700;"&gt;05&lt;/span&gt; A impressão perdida de 19,7% está relacionada a orçamento esgotado, score de qualidade ou concorrência de leilão?&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li style="padding:8px 0 8px 22px;position:relative;font-size:13px;color:#333;"&gt;&lt;span style="position:absolute;left:0;color:#1565c0;font-weight:700;"&gt;06&lt;/span&gt; Faz sentido expandir para PR+SC+RS agora (Plano Start 2) ou consolidar o desempenho no estado atual primeiro?&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- VALIDAÇÃO DA BASE --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="section-title"&gt;Auditoria e Validação dos Dados&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="validacao"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;🔎 Validação da Base — Transparência Analítica&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;th&gt;Campo&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;th&gt;Valor Informado&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;th&gt;Cálculo / Derivação&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;th&gt;Status&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Cliques Totais&lt;/td&gt;&lt;td&gt;139&lt;/td&gt;&lt;td&gt;Dado direto do relatório&lt;/td&gt;&lt;td&gt;&lt;span class="badge badge-green"&gt;✓ Confirmado&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Impressões&lt;/td&gt;&lt;td&gt;1.111&lt;/td&gt;&lt;td&gt;Dado direto do relatório&lt;/td&gt;&lt;td&gt;&lt;span class="badge badge-green"&gt;✓ Confirmado&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;CTR Calculado&lt;/td&gt;&lt;td&gt;—&lt;/td&gt;&lt;td&gt;139 ÷ 1.111 = &lt;strong&gt;12,51%&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;span class="badge badge-green"&gt;✓ Calculado&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;CPC Médio&lt;/td&gt;&lt;td&gt;R$ 4,71&lt;/td&gt;&lt;td&gt;Dado direto do relatório&lt;/td&gt;&lt;td&gt;&lt;span class="badge badge-green"&gt;✓ Confirmado&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Verba Utilizada&lt;/td&gt;&lt;td&gt;R$ 654,00&lt;/td&gt;&lt;td&gt;Dado direto do relatório&lt;/td&gt;&lt;td&gt;&lt;span class="badge badge-green"&gt;✓ Confirmado&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Orçamento Maio&lt;/td&gt;&lt;td&gt;R$ 700,00&lt;/td&gt;&lt;td&gt;Dado direto do relatório&lt;/td&gt;&lt;td&gt;&lt;span class="badge badge-green"&gt;✓ Confirmado&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Taxa de Uso do Budget&lt;/td&gt;&lt;td&gt;—&lt;/td&gt;&lt;td&gt;R$ 654 ÷ R$ 700 = &lt;strong&gt;93,4%&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;span class="badge badge-green"&gt;✓ Calculado&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Impressão Perdida&lt;/td&gt;&lt;td&gt;19,7%&lt;/td&gt;&lt;td&gt;Dado direto do relatório&lt;/td&gt;&lt;td&gt;&lt;span class="badge badge-green"&gt;✓ Confirmado&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Cliques por Gênero&lt;/td&gt;&lt;td&gt;99 H / 9 M&lt;/td&gt;&lt;td&gt;108 cliques com dado de gênero (31 sem segmentação)&lt;/td&gt;&lt;td&gt;&lt;span class="badge badge-yellow"&gt;⚠ Parcial&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Tags de Conversão&lt;/td&gt;&lt;td&gt;Ativas desde 28/05&lt;/td&gt;&lt;td&gt;Período de mensuração: ~3 dias&lt;/td&gt;&lt;td&gt;&lt;span class="badge badge-yellow"&gt;⚠ Insuficiente&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;tr&gt;&lt;td&gt;Dados de Conversão (WhatsApp, Vendas)&lt;/td&gt;&lt;td&gt;Não informados&lt;/td&gt;&lt;td&gt;Campos em branco no relatório&lt;/td&gt;&lt;td&gt;&lt;span class="badge badge-red"&gt;✗ Ausente&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- LIMITAÇÕES --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="limitacoes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;⚠ Limitações da Base Analisada&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;strong&gt;Período parcial:&lt;/strong&gt; Campanha iniciada em 11/05/2026 — dados representam ~21 dias, não o mês completo. Projeções devem ser tratadas com cautela.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;strong&gt;Tags de conversão inativas por 17 dias:&lt;/strong&gt; Ativação apenas em 28/05 inviabiliza análise de conversão para maio. Os campos "Cliques no WhatsApp", "Atendimentos" e "Vendas" estão em branco no relatório.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;strong&gt;Ausência de dados de receita:&lt;/strong&gt; Sem valores de vendas, é impossível calcular ROAS, CPL ou ROI da campanha neste mês.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;strong&gt;Gênero parcial:&lt;/strong&gt; 31 dos 139 cliques não têm dado de gênero registrado — a proporção H/M pode ser levemente diferente da apresentada.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;strong&gt;Sem histórico comparativo:&lt;/strong&gt; Maio é o primeiro mês de campanha. Não há base anterior para análise de tendência ou sazonalidade.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;strong&gt;Páginas 7 a 16 do PDF sem conteúdo extraído:&lt;/strong&gt; Dados de anúncios mais apresentados, localizações e concorrentes (informações de leilão) não foram processados — podem existir dados adicionais relevantes.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="footer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>Dashboard gerado com base no Relatório Google Ads — Riwas Hidráulicos · Maio 2026 · Gestão: EWS Marketing Digital · Análise: Claude Sonnet 4.6 via MyHub Nitro</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+<p class="p1">```</p>
+</body>
+</html>
